@@ -6,7 +6,7 @@
 /*   By: sde-carl <sde-carl@student.42roma.it >     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 18:59:16 by sde-carl          #+#    #+#             */
-/*   Updated: 2023/04/26 18:59:16 by sde-carl         ###   ########.fr       */
+/*   Updated: 2023/04/27 19:20:02 by sde-carl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_putptr(unsigned long nbr)
 	index = 0;
 	index += ft_putstr("0x");
 	if (nbr == 0)
-		i += ft_putchar('0');
+		index += ft_putchar('0');
 	else
-		i += ft_puthexa(nbr, "0123456789abcdef");
+		index += ft_puthexa(nbr, "0123456789abcdef");
 	return (index);
 }
